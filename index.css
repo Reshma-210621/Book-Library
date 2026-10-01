@@ -1,0 +1,68 @@
+:root {
+  --ink: #1b2a4a;
+  --ink-soft: #28395e;
+  --paper: #fbf7ee;
+  --paper-dim: #fdefe0;
+  --paper-line: #ecdfc4;
+  --brass: #e2933a;
+  --brass-light: #f2b76a;
+  --teal: #1b998b;
+  --coral: #ff6f59;
+  --maroon: #d1263f;
+  --text: #2e332e;
+  --text-muted: #6b6a5f;
+  --cream: #f6efe0;
+
+  --serif: "Fraunces", Georgia, serif;
+  --sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  font: 16px/1.55 var(--sans);
+  color: var(--text);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--sans);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--brass-light);
+  color: var(--ink);
+}
